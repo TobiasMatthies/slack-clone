@@ -1,1 +1,59 @@
-<p>login works!</p>
+<div class="flex h-screen flex-col items-center justify-center gap-5 text-light_text">
+  <div class="flex w-full items-center justify-center gap-3">
+    <img class="h-16" src="assets/img/Logo.svg" alt="logo" />
+    <h2 class="text-2xl font-medium">MySlack</h2>
+  </div>
+
+  <div
+    class="container flex w-11/12 flex-col items-center gap-5 rounded-2xl bg-dark3 px-4 py-8"
+  >
+    <h1 class="text-3xl">Anmeldung</h1>
+
+    <span class="font-light"
+      >Wir empfehlen dir, die E-Mail-Adresse zu nutzen, die du bei der Arbeit
+      verwendest</span
+    >
+
+    <div class="flex w-full items-center gap-3 rounded-3xl bg-dark2 px-4">
+      <img class="gray_icon h-3" src="assets/img/mail.svg" alt="mail" />
+      <input
+        class="flex-1 bg-transparent p-2 placeholder:text-gray_text focus-visible:outline-none"
+        placeholder="beispielname@email.com"
+        type="email"
+      />
+    </div>
+
+    <div class="flex w-full items-center gap-3 rounded-3xl bg-dark2 px-4">
+      <img class="gray_icon h-3" src="assets/img/lock.svg" alt="" />
+      <input
+        class="flex-1 bg-transparent p-2 placeholder:text-gray_text focus-visible:outline-none"
+        placeholder="Passwort"
+        type="password"
+      />
+    </div>
+
+    <span>Passwort vergessen?</span>
+
+    <div class="flex w-full items-center gap-3">
+      <div class="h-0.5 w-full bg-bg_gray"></div>
+      <span>ODER</span>
+      <div class="h-0.5 w-full bg-bg_gray"></div>
+    </div>
+
+    <div
+      class="flex w-full items-center justify-center gap-3 rounded-3xl bg-dark2 px-4 py-2"
+    >
+      <img class="h-5" src="assets/img/Google.svg" alt="Google" />
+      <span>Anmelden mit Google</span>
+    </div>
+
+    <div class="flex w-full justify-center gap-5">
+      <button class="rounded-3xl bg-blue1 px-4 py-2 border border-blue1">Anmelden</button>
+      <button class="rounded-3xl px-4 py-2 border border-blue1">Gäste-Login</button>
+    </div>
+  </div>
+
+  <span>Neu bei MySlack?</span>
+
+  <a class="rounded-3xl px-4 py-2 border border-blue1">Konto erstellen</a>
+</div>
