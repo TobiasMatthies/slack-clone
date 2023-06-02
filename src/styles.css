@@ -17,6 +17,15 @@ body {
     brightness(99%) contrast(87%) brightness(99%) contrast(87%);
 }
 
+.absolute_center {
+  top: 50%;
+    transform: translateY(-50%);
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* nunito-200 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */

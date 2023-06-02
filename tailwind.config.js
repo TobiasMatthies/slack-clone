@@ -17,6 +17,10 @@ module.exports = {
         gray_button: "4D5057",
         light_text: "#F2F3F5",
       },
+
+      boxShadow: {
+        card: "0px 2px 6px 0px rgba(0,0,0,0.25)"
+      }
     },
   },
   plugins: [],
