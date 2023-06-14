@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       colors: {
         blue1: "#5764F2",
+        blue1_hover: "#4752C4",
+        blue1_active: "#3C45A5",
         green_online: "#21A559",
         green1: "248046",
         pink_error: "#ED1E79",
@@ -12,15 +14,17 @@ module.exports = {
         dark2: "#2A2D31",
         dark3: "#1E1F22",
         bg_gray: "#3F4248",
+        bg_gray_hover: "#6E6F78",
+        bg_gray_active: "#80848E",
         gray_icon: "80848E",
-        gray_text: "#B5BAC0",
         gray_button: "4D5057",
-        light_text: "#F2F3F5",
+        text_light: "#F2F3F5",
+        text_gray: "#B5BAC0",
       },
 
       boxShadow: {
-        card: "0px 2px 6px 0px rgba(0,0,0,0.25)"
-      }
+        card: "0px 2px 6px 0px rgba(0,0,0,0.25)",
+      },
     },
   },
   plugins: [],

@@ -22,8 +22,20 @@ body {
     transform: translateY(-50%);
 }
 
-button {
+button, a {
   -webkit-tap-highlight-color: transparent;
+}
+
+.icon_light {
+  filter: invert(91%) sepia(6%) saturate(55%) hue-rotate(182deg) brightness(107%) contrast(94%);
+}
+
+.icon_light_gray {
+  filter: invert(72%) sepia(3%) saturate(527%) hue-rotate(173deg) brightness(104%) contrast(89%);
+}
+
+.icon_blue {
+  filter: invert(35%) sepia(86%) saturate(3573%) hue-rotate(227deg) brightness(102%) contrast(90%);
 }
 
 /* nunito-200 - latin */

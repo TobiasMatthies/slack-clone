@@ -1,7 +1,9 @@
-<div class="flex h-screen flex-col items-center justify-center gap-5 text-light_text">
-  <div class="flex w-full items-center justify-center gap-3">
-    <img class="h-16" src="assets/img/Logo.svg" alt="logo" />
-    <h2 class="text-2xl font-medium">MySlack</h2>
+<div
+  class="flex h-full min-h-screen flex-col items-center justify-center gap-5 py-5 text-text_light"
+>
+  <div class="flex w-full items-center justify-center gap-5">
+    <img class="h-14" src="assets/img/Logo.svg" alt="logo" />
+    <h2 class="text-3xl font-medium">MySlack</h2>
   </div>
 
   <form
@@ -17,7 +19,7 @@
     <div class="flex w-full items-center gap-3 rounded-3xl bg-dark2 px-4">
       <img class="gray_icon h-3" src="assets/img/mail.svg" alt="mail" />
       <input
-        class="flex-1 bg-transparent p-2 placeholder:text-gray_text focus-visible:outline-none"
+        class="flex-1 bg-transparent p-2 placeholder:text-text_gray focus-visible:outline-none"
         placeholder="beispielname@email.com"
         type="email"
       />
@@ -26,7 +28,7 @@
     <div class="flex w-full items-center gap-3 rounded-3xl bg-dark2 px-4">
       <img class="gray_icon h-3" src="assets/img/lock.svg" alt="" />
       <input
-        class="flex-1 bg-transparent p-2 placeholder:text-gray_text focus-visible:outline-none"
+        class="flex-1 bg-transparent p-2 placeholder:text-text_gray focus-visible:outline-none"
         placeholder="Passwort"
         type="password"
       />
@@ -40,20 +42,33 @@
       <div class="h-0.5 w-full bg-bg_gray"></div>
     </div>
 
-    <div
-      class="flex w-full items-center justify-center gap-3 rounded-3xl bg-dark2 px-4 py-2"
+    <button
+      class="flex w-full items-center justify-center gap-3 rounded-3xl bg-dark2 px-4 py-2 hover:bg-bg_gray_hover active:bg-bg_gray_active"
     >
       <img class="h-5" src="assets/img/Google.svg" alt="Google" />
       <span>Anmelden mit Google</span>
-    </div>
+    </button>
 
     <div class="flex w-full justify-center gap-5">
-      <button class="rounded-3xl bg-blue1 px-4 py-2 border border-blue1">Anmelden</button>
-      <button class="rounded-3xl px-4 py-2 border border-blue1">Gäste-Login</button>
+      <button
+        class="rounded-3xl bg-blue1 px-4 py-2 hover:bg-blue1_hover active:bg-blue1_active"
+      >
+        Anmelden
+      </button>
+      <a
+        href="/home"
+        class="rounded-3xl border border-blue1 px-4 py-2 hover:border-blue1_hover active:border-blue1_active"
+      >
+        Gäste-Login
+      </a>
     </div>
   </form>
 
   <span>Neu bei MySlack?</span>
 
-  <a routerLink="/signup" class="rounded-3xl px-4 py-2 border border-blue1">Konto erstellen</a>
+  <a
+    routerLink="/signup"
+    class="rounded-3xl border border-blue1 px-4 py-2 hover:border-blue1_hover active:border-blue1_active"
+    >Konto erstellen</a
+  >
 </div>
