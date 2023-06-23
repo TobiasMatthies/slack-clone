@@ -3,30 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { NavbarComponent } from './home/navbar/navbar.component';
-import { ChatComponent } from './home/chat/chat.component';
-import { ThreadComponent } from './home/thread/thread.component';
-import { HeaderComponent } from './home/header/header.component';
-import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component';
+import { NavbarComponent } from './components/chat/navbar/navbar.component';
+import { ChatComponent } from './components/chat/chat.component';
+import { ThreadComponent } from './components/chat/thread/thread.component';
+import { HeaderComponent } from './components/chat/header/header.component';
+import { LoginComponent } from './components/login/login.component';
+import { SignupComponent } from './components/signup/signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     NavbarComponent,
     ChatComponent,
     ThreadComponent,
     HeaderComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

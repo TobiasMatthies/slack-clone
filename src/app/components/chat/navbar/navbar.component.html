@@ -1,9 +1,11 @@
-<div class="container mx-auto px-5 py-5">
+<div class="container mx-auto px-10 py-5">
   <div class="flex flex-col">
     <div class="flex w-full items-center justify-between">
       <div class="flex gap-5">
         <img
-          class="icon_light"
+          [class.-rotate-90]="!showChannels"
+          (click)="toggleChannels()"
+          class="icon_light cursor-pointer"
           src="assets/img/arrow_drop_down.svg"
           alt="dropdown"
         />
@@ -20,17 +22,15 @@
       <img class="icon_blue" src="assets/img/add.svg" alt="add" />
     </div>
 
-    <div class="flex flex-col gap-3 p-[50px] text-lg text-text_gray">
+    <div *ngIf="showChannels" class="flex flex-col gap-3 pt-[50px] px-[50px] text-lg text-text_gray">
       <div *ngFor="let channel of channels" class="flex gap-3">
-        <img
-          class="icon_light_gray"
-          src="assets/img/tag.svg"
-          alt="tag"
-        /><span>{{ channel.name }}</span>
+        <img class="icon_light_gray" src="assets/img/tag.svg" alt="tag" /><a>{{
+          channel.name
+        }}</a>
       </div>
     </div>
 
-    <div class="mb-[50px] flex gap-3 px-[50px]">
+    <div class="my-[50px] flex gap-3 pl-[50px]">
       <img class="icon_blue" src="assets/img/add_circle.svg" alt="add" />
       <h3 class="text-lg text-blue1">Channel hinzufügen</h3>
     </div>
@@ -39,7 +39,9 @@
   <div class="flex w-full items-center">
     <div class="flex gap-5">
       <img
-        class="icon_light"
+        [class.-rotate-90]="!showChats"
+        (click)="toggleChats()"
+        class="icon_light cursor-pointer"
         src="assets/img/arrow_drop_down.svg"
         alt="dropdown"
       />
@@ -54,14 +56,14 @@
     </div>
   </div>
 
-  <div class="flex flex-col gap-3 p-[50px] text-lg text-text_gray">
-    <div *ngFor="let chat of chats" class="flex items-center gap-3">
+  <div *ngIf="showChats" class="flex flex-col gap-3 p-[50px] text-lg text-text_gray">
+    <div *ngFor="let directMessage of directMessages" class="flex items-center gap-3">
       <img
         class="h-12 rounded-full"
         src="assets/img/Property 1=Elias Neumann.svg"
         alt="profile"
       />
-      <span>{{chat.name}}</span>
+      <a>{{ directMessage.name }}</a>
     </div>
   </div>
 </div>

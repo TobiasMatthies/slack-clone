@@ -22,7 +22,7 @@ body {
     transform: translateY(-50%);
 }
 
-button, a {
+button, a, img {
   -webkit-tap-highlight-color: transparent;
 }
 

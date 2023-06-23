@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Chat } from '../models/chat.model';
-import { Channel } from '../models/channel.model';
+import { Chat } from '../types';
 
 @Injectable({
   providedIn: 'root',
@@ -13,22 +12,23 @@ export class DataService {
       members: [],
       messages: [],
       id: '1',
+      type: 'directMessage'
     },
-  ];
-  channels: Channel[] = [
     {
       name: 'Development team',
       description: 'Our dev team',
       members: [],
       messages: [],
-      id: '1',
+      id: '2',
+      type: 'channel'
     },
     {
       name: 'Sales team',
       description: 'Our sales team',
       members: [],
       messages: [],
-      id: '2',
+      id: '3',
+      type: 'channel'
     },
   ];
 
